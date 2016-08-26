@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
- 
+
 
 body {
 	padding-top: 50px;
@@ -14,22 +14,22 @@ body {
 	 box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 .navbar-brand {
-	 
+
 	height: 80px;
- 
+
 }
 .nav >li >a {
   padding-top: 30px;
   padding-bottom: 30px;
     font-size:16px;
 }
- 
+
 .navbar-fixed-top {
 	padding: 0 15px;
 }
 .navbar-default {
 	background-color: #fff;
-	 
+
 }
 
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter {
@@ -53,7 +53,7 @@ body {
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  
+
 }
 .hvr-sweep-to-top:before {
   content: "";
@@ -63,7 +63,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
- 
+
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -95,7 +95,7 @@ body {
 /* 52B677 green  ---- ED2757 pink*/
 .business-header {
 	min-height: 400px;
-	background: url(../../../../images/banner.png) center center no-repeat scroll;
+	background: url(images/banner.png) center center no-repeat scroll;
 	border-bottom: 2px dotted #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -137,7 +137,7 @@ hr.style-two {
 }
 .services-sectiongrids {
 	text-align: center;
-	 
+
 }
 .services-grid h4 {
 	font-size: 1.3em;
@@ -173,7 +173,7 @@ span.glyphicon-chevron-down{
 }
 .about-header h3 {
 	font-size: 2.5em;
- 
+
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #2a404e;
@@ -195,7 +195,7 @@ span.glyphicon-chevron-down{
 .about-text {
 	float: left;
 	width: 65%;
-	margin-top:3%; 
+	margin-top:3%;
 }
 .about-text p {
 	font-size: 15px;
@@ -205,13 +205,13 @@ span.glyphicon-chevron-down{
 .about-sectiongrids{
 		 text-align:center;
 	padding: 40px 150px;
-  
+
 }
 .about-grid{
- 
+
 	 text-align:center;
 	}
- 
+
 .arrow {
 	padding-top: 15px;
 	text-align: center;
@@ -219,4 +219,3 @@ span.glyphicon-chevron-down{
 sp footer {
 	margin: 50px 0;
 }
- 
