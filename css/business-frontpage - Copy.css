@@ -1,0 +1,251 @@
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+ 
+
+body {
+	padding-top: 50px;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.navbar {
+	min-height: 80px;
+}
+.navbar-brand {
+	 
+	height: 80px;
+ 
+}
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+    font-size:16px;
+}
+ 
+.navbar-fixed-top {
+	padding: 0 15px;
+}
+.navbar-default {
+	background-color: #fff;
+	border-bottom: 2px dotted #000;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter {
+	color: #000;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+
+}
+ 
+/* 52B677 green  ---- ED2757 pink*/
+.business-header {
+	min-height: 400px;
+	background: url(../../../../images/banner.png) center center no-repeat scroll;
+	border-bottom: 2px dotted #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+hr.style-two {
+	width: 30%;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, #000, transparent);
+}
+.services-section {
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+}
+.services-header {
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+.services-header h3 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 400;
+		color: #2a404e;
+}
+.services-header p span {
+	padding-top:10px;
+	display:inline-block;
+  text-decoration:underline;
+}
+.services-header p {
+	line-height: 1.5em;
+	font-size: 15px;
+	padding: 25px 0;
+	color: #7e7e7e;
+}
+.services-sectiongrids {
+	text-align: center;
+	 
+}
+.services-grid h4 {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 15px 0;
+	text-transform: uppercase;
+}
+.services-grid p {
+	font-size: 15px;
+	padding: 0 22px;
+	color: #7e7e7e;
+}
+span.glyphicon.glyphicon-pencil, span.glyphicon-align-left, span.glyphicon.glyphicon-print {
+	font-size: 2em;
+	color: #ED2757;
+	border-radius: 50px;
+	border: 3px solid;
+	padding: 1em;
+}
+span.glyphicon-chevron-down{
+	font-size: 1.5em;
+	color:  #F90;
+	border-radius: 10px;
+	border: 2px solid;
+	padding: 0.5em;
+}
+
+.about-section {
+	padding:3em 0;
+}
+.about-header {
+	text-align: center;
+}
+.about-header h3 {
+	font-size: 2.5em;
+ 
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #2a404e;
+}
+.about-header h3 span {
+	color: #F0C514;;
+
+}
+.about-imag {
+	float: left;
+	width:27%;
+	margin-right:5%
+}
+.about-imag img {
+	border: 2px solid #ED2757;
+	border-radius: 103px;
+}
+.about-text {
+	float: left;
+	width: 65%;
+	margin-top:3%; 
+}
+.about-text p {
+	font-size: 15px;
+	color: #7e7e7e;
+	line-height: 1.5em;
+}
+.about-sectiongrids{
+		 text-align:center;
+	padding: 40px 150px;
+  
+}
+.about-grid{
+ 
+	 text-align:center;
+	}
+ 
+.arrow {
+	padding-top: 15px;
+	text-align: center;
+}
+sp footer {
+	margin: 50px 0;
+}
+ @media(min-width:768px) {
+body {
+	padding-top: 50px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+}
+ 
+/* Load animation */
+
+@-webkit-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@-moz-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+
+/* Container */
+
+.progressskill {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+/* Item */
+
+.progressskill>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+ 
+/*
+.progressskill>li:after {
+ content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  top: 4.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+  color:#000;
+}*/
+
+.progressskill svg {
+  width: 13rem;
+  height: 13rem;
+  
+}
+
+.progressskill svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.progressskill svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;
+}
+ 
