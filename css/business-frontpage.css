@@ -95,7 +95,7 @@ body {
 /* 52B677 green  ---- ED2757 pink*/
 .business-header {
 	min-height: 400px;
-	background: url(images/banner.png) center center no-repeat scroll;
+	background: url(../images/banner.png) center center no-repeat scroll;
 	border-bottom: 2px dotted #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
