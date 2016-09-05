@@ -16,6 +16,7 @@
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
 <link href="css/animations.css" rel='stylesheet' type='text/css'/>
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -28,7 +29,7 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -38,8 +39,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li  ><a class="hvr-sweep-to-top link1" href="#about"><span class="glyphicon glyphicon-user"></span> About</a></li>
-        <li ><a class="hvr-sweep-to-top link2" href="#"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
-        <li  ><a class="hvr-sweep-to-top link3" href="#"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        <li ><a class="hvr-sweep-to-top link2" href="#portfolio"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
+        <li  ><a class="hvr-sweep-to-top link3" href="#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -81,7 +82,7 @@
           <p>Project ideas and experience with visual and textual content- Logo, Business Card Design, Flyer, Brochure design</p>
         </div>
         <div class="clearfix"></div>
-        <div class="arrow"> <a href="#work" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
+        <div class="arrow"> <a href="#about" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
       </div>
     </div>
   </div>
@@ -136,38 +137,97 @@
         </section>
       </div>
     </div>
+    <div class="arrow"> <a href="#portfolio" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
   </div>
   <!--about section-->
   <!--Portfolio -->
   <div class="portfolio" id="portfolio">
-    <div class="container"> </div>
+    <div class="container">
       <div class="about-header">
         <h3> portfolio </h3>
         <hr class="style-two">
-       <div class='animatedParent' data-sequence='500'>
-	<div class='animated bounceInDown box' data-id='1'><img src="http://dummyimage.com/300" alt="" /></div>
-	<div class='animated bounceInDown box' data-id='2'><img src="http://dummyimage.com/300" alt="" /></div>
-	<div class='animated bounceInDown box' data-id='3'><img src="http://dummyimage.com/300" alt="" /></div>
+        <div class="profile-text">
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+        </div>
+      </div>
+      <div id="work-gallery" class="animatedParent" data-sequence='500'>
+        <div class="row">
+          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class='animated growIn' data-id='1' src="http://placehold.it/150x150"/></a>
+            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
+            <div id="lightbox-controls" class="short-animate"> <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a> </div>
+          </div>
+          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class='animated growIn' data-id='2' src="http://placehold.it/150x150"/></a>
+            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
+            <div id="lightbox-controls" class="short-animate"> <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a> </div>
+          </div>
+          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class='animated growIn' data-id='3' src="http://placehold.it/150x150"/></a>
+            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
+            <div id="lightbox-controls" class="short-animate"> <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a> </div>
+          </div>
+        </div>
+        <!--/row -->
 
-</div>
         <div class="clearfix"></div>
       </div>
-
-  </div>
-</div>
-<!--/portfolio -->
-
-<!-- Footer -->
-<div class="container">
-  <footer>
-    <div class="row">
-      <div class="col-lg-12">
-        <p>Copyright &copy; N designs 2014</p>
-      </div>
     </div>
-    <!-- /.row -->
-  </footer>
-</div>
+    <div class="arrow"> <a href="#contact" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
+  </div>
+  <!--/portfolio -->
+  <!--Contact -->
+
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="about-header">
+        <h3> Contact </h3>
+        <hr class="style-two">
+        <div class="profile-text">
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <div class="col-md-6">
+            <div class="group">
+              <input type="text" required>
+              <span class="highlight"></span> <span class="bar red-bar"></span>
+              <label>Name</label>
+            </div>
+            <div class="group">
+              <input type="text" required>
+              <span class="highlight"></span> <span class="bar green-bar"></span>
+              <label>Email</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="group">
+              <textarea class="message" name="cd-textarea" required></textarea>
+              <span class="highlight"></span> <span class="bar blue-bar"></span>
+              <label>Message</label>
+            </div>
+            <button type="submit" class="button"><span>Send </span></button>
+          </div>
+          <div class="clearfix"></div>
+        </form>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <!--/contact -->
+
+  <!-- Footer -->
+  <div class="container">
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p> Copyright &copy;2016  All rights  Reserved </p>
+          <div class="modal-footer footer_nav"> <a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a> </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
+  </div>
 </div>
 <!-- /.content -->
 
