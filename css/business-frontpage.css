@@ -1,16 +1,17 @@
-/*!
- * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
- 
-
 body {
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
+@font-face {
+	font-family: 'headingfont2d';
+	src: url('../fonts/2Dumb.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'headingfont3d';
+	src: url('../fonts/3Dumb.ttf') format('truetype');
+}
 .navbar {
-	min-height: 80px;
 	border: none;
+	box-shadow: 2px 2px 1px 0 rgba(0,0,0,.15);
 }
 .navbar-brand {
 	height: 80px;
@@ -85,14 +86,158 @@ span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-briefcase, span.glyphico
 	transform: scaleY(1);
 }
 /* 52B677 green  ---- ED2757 pink*/
-.business-header {
-	min-height: 400px;
-	background: url(../images/banner.png) center center no-repeat scroll;
+/*new banner*/
+.bannerheader {
+	background: url(../images/grid-tile.jpg) repeat;
 	margin-top: 80px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+	text-align: center;
+}
+.col-md-3 {
+	margin-top: 5%;
+}
+/*new banner*/
+ 
+#heading1 {
+	font-family: 'headingfont3d';
+	font-size: 3.3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 5%;
+	color: #ed2958;
+}
+#heading2 {
+	font-family: 'headingfont2d';
+	font-size: 1.3em;
+	font-smoothing: antialiased;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+#heading3 {
+	font-family: 'headingfont2d';
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+#headbutton {
+	font-family: 'headingfont3d';
+	font-size: 3.3em;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+#headbutton a {
+	margin-right: 10px;
+	color: #000;
+	text-decoration: none;
+}
+#heading4 {
+	font-family: 'headingfont3d';
+	font-size: 2.3em;
+	font-weight: bold;
+}
+span.glyphicon.glyphicon-triangle-bottom {
+	font-size: 3em;
+	color: #000;
+	margin-top: 0.5em;
+}
+.borderstrip {
+	width: 100%;
+}
+hvr-float {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+ 16.65% {
+ -webkit-transform: translateX(8px);
+ transform: translateX(8px);
+}
+ 33.3% {
+ -webkit-transform: translateX(-6px);
+ transform: translateX(-6px);
+}
+ 49.95% {
+ -webkit-transform: translateX(4px);
+ transform: translateX(4px);
+}
+ 66.6% {
+ -webkit-transform: translateX(-2px);
+ transform: translateX(-2px);
+}
+ 83.25% {
+ -webkit-transform: translateX(1px);
+ transform: translateX(1px);
+}
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+}
+ @keyframes hvr-wobble-horizontal {
+ 16.65% {
+ -webkit-transform: translateX(8px);
+ transform: translateX(8px);
+}
+ 33.3% {
+ -webkit-transform: translateX(-6px);
+ transform: translateX(-6px);
+}
+ 49.95% {
+ -webkit-transform: translateX(4px);
+ transform: translateX(4px);
+}
+ 66.6% {
+ -webkit-transform: translateX(-2px);
+ transform: translateX(-2px);
+}
+ 83.25% {
+ -webkit-transform: translateX(1px);
+ transform: translateX(1px);
+}
+ 100% {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+}
+.hvr-wobble-horizontal {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+	-webkit-animation-name: hvr-wobble-horizontal;
+	animation-name: hvr-wobble-horizontal;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+.col-lg-12 {
+	padding: 0;
+	margin: 0;
 }
 hr.style-two {
 	width: 30%;
@@ -101,6 +246,8 @@ hr.style-two {
 	background-image: linear-gradient(to right, transparent, #000, transparent);
 }
 .services-section {
+	border-top: 1px solid #fefbe1;
+	padding-top: 100px;
 	text-align: center;
 	background-color: #fff;
 	color: #000;
@@ -156,7 +303,7 @@ span.glyphicon.glyphicon-chevron-down {
 	padding: 0.5em;
 }
 .about-section {
-	padding: 3em 0;
+	padding-top: 100px;
 }
 .about-header {
 	text-align: center;

@@ -15,7 +15,7 @@
 <link href="css/business-frontpage.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
-<link href="css/animations.css" rel='stylesheet' type='text/css'/>
+<link href="css/animations.css" rel="stylesheet" type="text/css"/>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,34 +29,59 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation" id="navbarTop">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#"> <img src="images/logoN01.png" alt=""> </a> </div>
+      <a class="navbar-brand " href="#"> <img src="images/logoN01.png" alt=""> </a> </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li  ><a class="hvr-sweep-to-top link1" href="#about"><span class="glyphicon glyphicon-user"></span> About</a></li>
-        <li ><a class="hvr-sweep-to-top link2" href="#portfolio"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
-        <li  ><a class="hvr-sweep-to-top link3" href="#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        <li  ><a class="hvr-sweep-to-top link1 smooth-scroll" href="#about"><span class="glyphicon glyphicon-user"></span> About</a></li>
+        <li ><a class="hvr-sweep-to-top link2 smooth-scroll" href="#portfolio"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
+        <li  ><a class="hvr-sweep-to-top link3 smooth-scroll" href="#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
       </ul>
     </div>
+
     <!-- /.navbar-collapse -->
   </div>
   <!-- /.container -->
 </nav>
 
 <!-- Image Background Page Header -->
-<!-- Note: The background image is set within the business-casual.css file. -->
-<header class="business-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12"> </div>
+<!--
+<div class="container-fluid" style="margin-top: 80px;">
+  <div class="row">
+    <div class="col-lg-12 animatedParent animateOnce"  > <img src="images/banner033.png" class="img-responsive imageDesk"> <img src="images/banner-Mob.png" class=" img-responsive imageMob">
+      <div id="heading1" class="animated fadeInLeft">" Website "</div>
+      <div id="heading2" class="animated fadeInLeft"> Its an anchor for your business.</div>
+      <div id="heading3" class="animated fadeInLeft"> Your customers expect you to have it.</div>
+      <div id="headbutton" class="animated fadeInUp" ><a class="smooth-scroll hvr-wobble-horizontal"  href="#contact" > Get in touch  >> </a> </div>
+      <div id="heading4"  class="animated fadeInRight"> Clean responsive sites</div>
     </div>
   </div>
-</header>
+</div>-->
+
+<div class="container-fluid bannerheader"  >
+  <div class="row animatedParent animateOnce">
+    <div class="col-md-3 ">
+      <div id="heading1" class="animated fadeInLeft">" Website "</div>
+      <div id="heading2" class="animated fadeInLeft"> Its an anchor for your business.</div>
+      <div id="heading3" class="animated fadeInLeft"> Your customers expect you to have it.</div>
+      <div id="headbutton" class="animated fadeInUp" ><a class="smooth-scroll hvr-wobble-horizontal"  href="#contact" > Get in touch  &gt;&gt; </a> </div>
+    </div>
+    <div class="col-md-6"><img src="images/banner-mid.png" class="img-responsive"> </div>
+    <div class="col-md-3">
+      <div id="heading4"  class="animated fadeInRight"> Clean responsive sites</div>
+    </div>
+  </div>
+  <div class="row"><a href="#services" class=" smooth-scroll  hvr-wobble-horizontal " ><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></div>
+
+</div>
+
+   <div class="borderstrip"><img src="images/border.jpg" class="img-responsive"> </div>
 
 <!-- Page Content -->
 <div class="content">
@@ -82,7 +107,7 @@
           <p>Project ideas and experience with visual and textual content- Logo, Business Card Design, Flyer, Brochure design</p>
         </div>
         <div class="clearfix"></div>
-        <div class="arrow"> <a href="#about" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
+        <div class="arrow"> <a href="#about" class="scroll smooth-scroll hvr-wobble-horizontal"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
       </div>
     </div>
   </div>
@@ -93,11 +118,13 @@
       <div class="about-header">
         <h3> about </h3>
         <hr class="style-two">
-        <div class="about-imag"> <img src="images/profile.jpg" alt=""/> </div>
+        <div class="about-imag"> <img src="images/profile.png" alt=""/> </div>
         <div class="about-text">
-          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
-        </div>
+
+        <p>Hi,my name is Nisful. I create beautiful, usable, professional websites using best practice accessibility and the latest W3C web standards guidelines, resulting in semantic and seo friendly XHTML and CSS. All my websites are lovingly hand coded.
+For building websites my weapons of choice are Photoshop and Illustrator for creating layouts, then Coda to produce clean semantic XHTML and CSS.
+</p>
+                   </div>
         <div class="clearfix"></div>
       </div>
       <!--about header -->
@@ -137,7 +164,7 @@
         </section>
       </div>
     </div>
-    <div class="arrow"> <a href="#portfolio" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
+    <div class="arrow"> <a href="#portfolio" class="scroll smooth-scroll hvr-wobble-horizontal"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
   </div>
   <!--about section-->
   <!--Portfolio -->
@@ -147,22 +174,21 @@
         <h3> portfolio </h3>
         <hr class="style-two">
         <div class="profile-text">
-          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+         <p>In the spring of 2003, during my first year of college at USU, I took a general education business course where we were assigned the task of building a webpage in Word. Thus began my love affair with design. After graduating I began working full time for a web design company. While I still enjoyed it, for the most part, I felt like something was missing. I wasn’t happy with the designs I was creating. They were “serious” and “corporate” and that just wasn’t me. When I made the move to freelance full time, I decided to let my quirky flag fly, so to speak. It may not be for everyone, but some people are going to love it.</p>
         </div>
       </div>
-      <div id="work-gallery" class="animatedParent" data-sequence='500'>
+      <div id="work-gallery" class="animatedParent animateOnce" data-sequence="500">
         <div class="row">
-          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class='animated growIn' data-id='1' src="http://placehold.it/150x150"/></a>
-            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
+          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class="animated growIn" data-id='1' src="images/portfolio/thumb/worksm01.jpg"/></a>
+            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="images/portfolio/fullsize/worklr01.jpg"/> </div>
             <div id="lightbox-controls" class="short-animate"> <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a> </div>
           </div>
-          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class='animated growIn' data-id='2' src="http://placehold.it/150x150"/></a>
-            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
+          <div class="col-md-4 item-grid"> <a href="#image2" class="wiggle"><img class="animated growIn" data-id='2' src="images/portfolio/thumb/worksm02.jpg"/></a>
+            <div class="lightbox short-animate" id="image2"> <img class="long-animate"  src="images/portfolio/fullsize/worklr02.jpg"/>  </div>
             <div id="lightbox-controls" class="short-animate"> <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a> </div>
           </div>
-          <div class="col-md-4 item-grid"> <a href="#image1" class="wiggle"><img class='animated growIn' data-id='3' src="http://placehold.it/150x150"/></a>
-            <div class="lightbox short-animate" id="image1"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
+          <div class="col-md-4 item-grid"> <a href="#image3" class="wiggle"><img class="animated growIn" data-id='3' src="http://placehold.it/150x150"/></a>
+            <div class="lightbox short-animate" id="image3"> <img class="long-animate" src="http://placehold.it/650x650"/> </div>
             <div id="lightbox-controls" class="short-animate"> <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a> </div>
           </div>
         </div>
@@ -171,7 +197,7 @@
         <div class="clearfix"></div>
       </div>
     </div>
-    <div class="arrow"> <a href="#contact" class="scroll"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
+    <div class="arrow"> <a href="#contact" class="scroll smooth-scroll hvr-wobble-horizontal"> <span class="glyphicon glyphicon-chevron-down"></span></a> </div>
   </div>
   <!--/portfolio -->
   <!--Contact -->
@@ -182,11 +208,11 @@
         <h3> Contact </h3>
         <hr class="style-two">
         <div class="profile-text">
-          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+          <p> I am available for freelance work. I want to hear about your projects. To contact me, please fill out the following form. All fields are required.    </p>
         </div>
       </div>
       <div class="contact-form">
-        <form>
+        <form action="https://formspree.io/nisful@gmail.com" method="POST">
           <div class="col-md-6">
             <div class="group">
               <input type="text" required>
@@ -222,7 +248,7 @@
       <div class="row">
         <div class="col-lg-12">
           <p> Copyright &copy;2016  All rights  Reserved </p>
-          <div class="modal-footer footer_nav"> <a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a> </div>
+          <div class="modal-footer footer_nav"> <a class="smooth-scroll" href="#about">About</a><a class="smooth-scroll" href="#portfolio">Portfolio</a><a class="smooth-scroll" href="#contact">Contact</a> </div>
         </div>
       </div>
       <!-- /.row -->
@@ -234,7 +260,7 @@
 <!-- jQuery -->
 
 <script src="js/jquery.js"></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/css3-animate-it.js"></script>
 <!-- Bootstrap Core JavaScript -->
