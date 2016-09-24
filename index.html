@@ -212,13 +212,15 @@ For building websites my weapons of choice are Photoshop and Illustrator for cre
         </div>
       </div>
       <div class="contact-form">
-        <form action="https://formspree.io/nisful@gmail.com" method="POST">
+        <form id="contact-form" action="https://formspree.io/nisful@gmail.com" method="POST">
           <div class="col-md-6">
             <div class="group">
               <input name="name" type="text" required>
               <span class="highlight"></span> <span class="bar red-bar"></span>
               <label>Name</label>
             </div>
+            <input type="hidden" name="_subject" value="New submission! from nisful.github.io" />
+            <input type="text" name="_gotcha" style="display:none" />
             <div class="group">
               <input name="email" type="text" required>
               <span class="highlight"></span> <span class="bar green-bar"></span>
@@ -227,7 +229,7 @@ For building websites my weapons of choice are Photoshop and Illustrator for cre
           </div>
           <div class="col-md-6">
             <div class="group">
-              <textarea class="message" name="cd-textarea" required></textarea>
+              <textarea class="message" name="message" required></textarea>
               <span class="highlight"></span> <span class="bar blue-bar"></span>
               <label>Message</label>
             </div>

@@ -1,23 +1,22 @@
 $(function() {
-    
+
     var $meters = $(".skillbar-bar");
     var $section = $('#third');
     var $queue = $({});
-    
+
     function loadDaBars() {
-		 
+
         $meters.each(function() {
             var $el = $(this);
             var origWidth = $el.attr('data-percent');
-			console.log(origWidth);
-            $el.width(0);
-           
-                $el.animate({width: origWidth}, 1200);
-             
-			 
+			      $el.width(0);
+
+            $el.animate({width: origWidth}, 1200);
+
+
         });
     }
-    
+
     $(document).bind('scroll', function(ev) {
         var scrollOffset = $(document).scrollTop();
         var containerOffset = $section.offset().top - window.innerHeight;
@@ -26,9 +25,9 @@ $(function() {
             // unbind event not to load scrolsl again
             $(document).unbind('scroll');
         }
-    }); 
-    
-}); 
+    });
+
+});
 $(document).ready(function(){
 	$('.smooth-scroll').on('click',function (e) {
 	    e.preventDefault();
@@ -43,4 +42,26 @@ $(document).ready(function(){
 	    });
 	});
 });
- 
+
+var $contactForm = $('#contact-form');
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: 'https://formspree.io/nisful@gmail.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+		},
+		success: function(data) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+		},
+		error: function(err) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--error">Oops, there was an error.</div>');
+      console.log(err.responseText);
+		}
+	});
+});
