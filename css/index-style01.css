@@ -1,5 +1,13 @@
-body {
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+@import 'https://fonts.googleapis.com/css?family=Exo+2:400,600|Roboto:400,500';
+p {
+	font-family: 'Roboto', sans-serif;
+}
+h3 {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+}
+h4 {
+	font-family: 'Exo 2', sans-serif;
 }
 @font-face {
 	font-family: 'headingfont2d';
@@ -26,7 +34,8 @@ body {
 }
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter {
 	color: #000;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-briefcase, span.glyphicon.glyphicon-earphone {
@@ -85,7 +94,7 @@ span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-briefcase, span.glyphico
 	-webkit-transform: scaleY(1);
 	transform: scaleY(1);
 }
-/* 52B677 green  ---- ED2757 pink*/
+ 
 /*new banner*/
 .bannerheader {
 	background: url(../images/grid-tile.jpg) repeat;
@@ -96,7 +105,7 @@ span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-briefcase, span.glyphico
 	margin-top: 5%;
 }
 /*new banner*/
- 
+
 #heading1 {
 	font-family: 'headingfont3d';
 	font-size: 3.3em;
@@ -260,7 +269,6 @@ hr.style-two {
 .services-header h3 {
 	font-size: 2.5em;
 	text-transform: uppercase;
-	font-weight: 400;
 	color: #2a404e;
 }
 .services-header p span {
@@ -270,7 +278,7 @@ hr.style-two {
 }
 .services-header p {
 	line-height: 1.5em;
-	font-size: 15px;
+	font-size: 1.3em;
 	padding: 25px 0;
 	color: #7e7e7e;
 }
@@ -278,13 +286,13 @@ hr.style-two {
 	text-align: center;
 }
 .services-grid h4 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: bold;
 	padding: 15px 0;
 	text-transform: uppercase;
 }
 .services-grid p {
-	font-size: 15px;
+	font-size: 1.3em;
 	padding: 0 22px;
 	color: #7e7e7e;
 }
@@ -311,12 +319,10 @@ span.glyphicon.glyphicon-chevron-down {
 .about-header h3 {
 	font-size: 2.5em;
 	text-transform: uppercase;
-	font-weight: 400;
 	color: #2a404e;
 }
 .about-header h3 span {
 	color: #F0C514;
-	;
 }
 .about-imag {
 	float: left;
@@ -334,7 +340,7 @@ span.glyphicon.glyphicon-chevron-down {
 	margin-top: 3%;
 }
 .about-text p {
-	font-size: 15px;
+	font-size: 1.3em;
 	color: #7e7e7e;
 	line-height: 1.5em;
 }
@@ -350,10 +356,12 @@ span.glyphicon.glyphicon-chevron-down {
 	text-align: center;
 }
 footer {
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	margin: 50px 0;
 }
 .footer_nav a {
+	font-weight: 500;
 	margin-right: 20px;
 }
 .footer_nav a:hover, .footer_nav a:focus, .footer_nav a:visited {

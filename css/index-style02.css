@@ -77,7 +77,7 @@
 .profile-text p {
 	margin: 50px;
 	line-height: 1.5em;
-	font-size: 15px;
+	font-size: 1.3em;
 	color: #7e7e7e;
 }
 #work-gallery {
@@ -372,7 +372,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
 	width: 80%;
 }
 .about-text p {
- 
 	overflow: hidden;
 }
 .about-sectiongrids {
@@ -383,7 +382,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
 }
  @media(max-width:640px) {
 .about-text p {
- 
 	overflow: hidden;
 }
 .about-imag img {
@@ -402,7 +400,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
 }
  @media(max-width:320px) {
 .about-text p {
- 
 	overflow: hidden;
 	font-size: 0.9em;
 }
