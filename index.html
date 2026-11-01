@@ -193,30 +193,41 @@
         </div>
       </div>
       <div class="contact-form">
-        <form id="contact-form" action="https://formspree.io/f/nisful@gmail.com" method="POST">
-          <div class="col-md-6">
-            <div class="group">
-              <input name="name" type="text" required>
-              <span class="highlight"></span> <span class="bar red-bar"></span>
-              <label>Name</label>
-            </div>
-            <input type="hidden" name="_subject" value="New submission! from nisful.github.io" />
-            <input type="text" name="_gotcha" style="display:none" />
-            <div class="group">
-              <input name="email" type="text" required>
-              <span class="highlight"></span> <span class="bar green-bar"></span>
-              <label>Email</label>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="group">
-              <textarea class="message" name="message" required></textarea>
-              <span class="highlight"></span> <span class="bar blue-bar"></span>
-              <label>Message</label>
-            </div>
-            <button type="submit" class="button"><span>Send </span></button>
-          </div>
-          <div class="clearfix"></div>
+       <form id="contact-form"
+      action="https://formspree.io/f/nisful@gmail.com"
+      method="POST">
+            <div class="col-md-6">
+                <div class="group">
+                    <input name="name" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar red-bar"></span>
+                    <label>Name</label>
+                </div>        
+                <input type="hidden" name="_subject"
+                       value="New submission from nisful.github.io">        
+                <input type="text" name="_gotcha"
+                       style="display:none">        
+                <div class="group">
+                    <input name="email" type="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar green-bar"></span>
+                    <label>Email</label>
+                </div>
+            </div>        
+            <div class="col-md-6">
+                <div class="group">
+                    <textarea class="message"
+                              name="message"
+                              required></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar blue-bar"></span>
+                    <label>Message</label>
+                </div>        
+                <button type="submit" class="button">
+                    <span>Send</span>
+                </button>
+            </div>        
+            <div class="clearfix"></div>
         </form>
       </div>
       <div class="clearfix"></div>
